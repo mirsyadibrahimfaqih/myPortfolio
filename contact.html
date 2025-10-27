@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kontak — Mohamad Irsyad Ibrahim Faqih</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav-container">
+    <a class="brand" href="index.html">Irsyad</a>
+    <nav class="nav">
+      <a href="index.html">Beranda</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html">Kontak</a>
+    </nav>
+    <button class="nav-toggle" aria-label="toggle navigation">☰</button>
+  </div>
+</header>
+<main class="container">
+<h1>Form Pengajuan Projek</h1>
+<form class="contact-form" id="contactForm">
+<label for="name">Nama</label>
+<input type="text" id="name" name="name" required>
+<label for="email">Email</label>
+<input type="email" id="email" name="email" required>
+<label for="service">Jenis Layanan</label>
+<select id="service" name="service" required>
+<option value="web">Pembuatan Website</option>
+<option value="konsul">Konsultasi Teknologi</option>
+<option value="uiux">Desain UI/UX</option>
+</select>
+<label for="message">Deskripsi / Pesan</label>
+<textarea id="message" name="message" rows="5" required></textarea>
+<fieldset>
+<legend>Pilih Keadaan</legend>
+<label><input type="radio" name="priority" value="normal" checked> Normal</label>
+<label><input type="radio" name="priority" value="urgent"> Penting</label>
+</fieldset>
+<label><input type="checkbox" id="agree" name="agree" required> Saya menyetujui kontak via email</label>
+<button type="submit" class="btn">Kirim Request</button>
+</form>
+<div id="formMessage" aria-live="polite"></div>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; <span id="year"></span> Mohamad Irsyad Ibrahim Faqih — <a href="https://itpln.ac.id" target="_blank" rel="noopener">ITPLN</a></p>
+  </div>
+</footer>
+<script src="main.js"></script>
+</body>
+</html>
